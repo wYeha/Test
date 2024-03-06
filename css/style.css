@@ -1,0 +1,332 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* GOLOS */
+
+/* golos-text-regular - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/golos-text-v4-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* golos-text-500 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/golos-text-v4-cyrillic_latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* golos-text-600 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/golos-text-v4-cyrillic_latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* golos-text-700 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/golos-text-v4-cyrillic_latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* golos-text-800 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/golos-text-v4-cyrillic_latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* golos-text-900 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/golos-text-v4-cyrillic_latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* MERRIWEATHER */
+
+/* merriweather-300 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/merriweather-v30-cyrillic_latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* merriweather-regular - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/merriweather-v30-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* merriweather-700 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/merriweather-v30-cyrillic_latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* merriweather-900 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/merriweather-v30-cyrillic_latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+html{
+	box-sizing: border-box;
+}
+
+*, *::before, *::after{
+	box-sizing: inherit;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.wrapper__start{
+	max-width: 1222px;
+	margin: auto;
+}
+
+/* BG */
+
+.start{
+	background: url(/img/png/bg.png) no-repeat;
+	height: 700px;
+	width: 1920px;
+}
+
+/* BG END */
+
+/*HEADER*/
+
+.header__logo{
+	height: 31.18px;
+	width: 91.82px;
+}
+
+.header{
+	display: flex;
+	flex-direction: row;
+  align-items: center; 
+	padding-top: 26px;
+}
+
+.header__text{
+	word-spacing: +1%;
+	font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 700;
+	color: #595653;
+	font-size: 16.65px;
+	line-height: 109%;
+	padding-left: 6.35px;
+}
+
+/* HEADER END */
+
+/* START INFO */
+
+.start__info__container {
+	width: 542px;
+	padding-top: 62px;
+}
+
+.start__info__heading{
+	line-height: 110%;
+	color: #313131;
+	font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+	font-size: 60px;
+}
+
+.align__left{
+	text-align: left;
+}
+
+.align__center{
+	text-align: center;
+}
+
+.align__right{
+	text-align: right;
+}
+
+.start__info__desc{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 24px;
+	font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 400;
+	line-height: 128%;
+	font-size: 18px;
+	color: #313131;
+}
+
+.start__info__btns{
+	display: flex;
+	justify-content: space-between;
+	gap: 16px;
+	padding-top: 40px;
+}
+
+.start__info__btns button{
+	font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 500;
+	line-height: 130%;
+	font-size: 16px;
+	width: 100%;
+	border-radius: 66px;
+	padding: 13px 20px 13px 20px ;
+}
+
+.support__btn{
+	background-color: #1f1f1f;
+	color: #fff;
+	border: 2px solid transparent;
+}
+
+.support__btn:hover{
+	transition: 0.3s;
+	background-color: #FBCE51;
+	color: #1f1f1f;
+}
+
+.more__btn{
+	color: #1f1f1f;
+	background-color: transparent;
+	border: 2px solid #1f1f1f;
+}
+
+.more__btn:hover{
+	transition: 0.3s;
+	background-color: #1f1f1f;
+	color: #fff;
+}
+
+/* START INFO END */
+
+/* RUNNING STRING */
+
+.tickers{
+	margin-right: 2708px;
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	white-space: nowrap;
+	background: #f54932;
+}
+
+.ticker1{
+	position: absolute;
+	left: -110%;
+	animation: marquee1 1s linear infinite ;
+}
+
+.ticker{
+	display: flex;
+	line-height: 110%;
+	font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+	font-size: 22px;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 18px 0;
+	gap: 12px;
+	animation: startLine 15s linear, marquee 15s linear 15s infinite;
+	margin: 0 auto;
+}
+
+.ticker__head{
+	text-align: center;
+}
+
+@keyframes startLine{
+	0%{
+		transform: translateX(100%);
+	}
+	100%{
+		transform: translateX(50%);
+	}
+}
+
+@keyframes marquee{
+	0%{
+		transform: translateX(50%);
+	}
+	100%{
+		transform: translateX(0%);
+	}
+}
+
+/* RUNNING STRING END*/
